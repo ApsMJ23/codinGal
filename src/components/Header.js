@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { Navbar, Image, Nav, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import background from '../images/bg.jpeg'
 import Modal from './ModalComponent'
 
@@ -47,6 +48,7 @@ function Header() {
                     className="mr-auto my-2 my-lg-0"
                 >
                     <Nav className='mx-2 my-3'>Trial Lesson [Grade 1-3]</Nav>
+                    <Nav className='mx-2 my-3'><Link to='/passangers' style={{ color: '#000' }} >Passangers</Link></Nav>
                 </Nav>
                 <Nav.Item className='mx-2 my-3'>
                     {`${minutes}:${seconds}`}
